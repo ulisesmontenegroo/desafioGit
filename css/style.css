@@ -1,0 +1,871 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: peachpuff;
+}
+
+/* Grid Inicio */
+
+.gridInicio{
+  display: grid;
+  grid-template-areas: "banner banner"
+                       "nav nav"
+                       "mainInicio mainInicio"
+                       "footer footer";
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+/* Grid Productos */
+
+.gridProductos{
+  display: grid;
+  grid-template-areas: "banner banner"
+                       "nav nav"
+                       "mainProductos mainProductos"
+                       "footer footer";
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+/* Grid Sucursales */
+
+.gridSucursales{
+  display: grid;
+  grid-template-areas: "banner banner"
+                       "nav nav"
+                       "mainSucursales mainSucursales"
+                       "footer footer";
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Grid Sucursales */
+
+.gridEmpresa{
+  display: grid;
+  grid-template-areas: "banner banner"
+                       "nav nav"
+                       "mainEmpresa mainEmpresa"
+                       "footer footer";
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Grid Contacto */
+
+.gridContacto{
+  display: grid;
+  grid-template-areas: "banner banner"
+                       "nav nav"
+                       "mainContacto mainContacto"
+                       "footer footer";
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Banner */
+
+.banner{
+  grid-area: banner;
+  justify-self: center;
+}
+
+.logo{
+  height: 200px;
+}
+
+/* Menu Navegacion */
+
+nav{
+  grid-area: nav;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li{
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 3px 10px;
+  background-color: brown;
+  border: 2px solid black;
+  border-radius: 4px;
+  opacity: 0.9;
+
+}
+
+.menuAnimacion:hover{
+  scale: 1.1;
+  opacity: 1.7;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/* Main Inicio */
+
+.animate__animated.animate__slideInLeft{
+  animation-duration: 0.9s;
+}
+
+.animate__animated.animate__slideInRight{
+  animation-duration: 0.9s;
+}
+
+.mainInicio{
+  grid-area: mainInicio;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja1{
+  background-color: white;
+  height: 357px;
+  width: 500px;
+}
+
+#imagenProductos1{
+  margin-bottom: 40px;
+  margin-right: 15px;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+#textoProductos1{
+  margin-bottom: 40px;
+  margin-left: 15px;
+  width: 500px;
+  height: 200px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.caja2{
+  background-color: white;
+  height: 357px;
+  width: 500px;
+}
+
+#imagenProductos2{
+  margin-top: 40px;
+  margin-left: 15px;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+#textoProductos2{
+  margin-top: 40px;
+  margin-right: 15px;
+  width: 500px;
+  height: 200px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main Productos */
+
+.mainProductos{
+  grid-area: mainProductos;
+  margin-top: 150px;
+  margin-bottom: 130px;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#archivoProductos{
+  height: 230px;
+  width: 17%;
+  margin-right: 25px;
+  border-radius: 20px;
+}
+
+#textoProductos{
+  width: 35%;
+  height: 300px;
+  margin-left: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#imagenProductos{
+  width: 45%;
+  height: 300px;
+  margin-top: 50px;
+}
+
+#preciosProductos{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#marcasProductos{
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+}
+
+/* Main Sucursales */
+
+.mainSucursales{
+  grid-area: mainSucursales;
+  display: grid;
+  grid-template-areas: "tituloSucursales tituloSucursales"
+                       "subtituloDistribuidora subtituloDistribuidora"
+                       "mapaDistribuidora textoDistribuidora"
+                       "subtituloFerreteria subtituloFerreteria"
+                       "textoFerreteria mapaFerreteria";
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  row-gap: 40px;
+}
+
+#tituloSucursales{
+  grid-area: tituloSucursales;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.subtituloDistribuidora{
+  grid-area: subtituloDistribuidora;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#mapaDistribuidora{
+  grid-area: mapaDistribuidora;
+  justify-self: end;
+}
+
+#textoDistribuidora{
+  grid-area: textoDistribuidora;
+  text-align: start;
+  padding-right: 60%;
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.subtituloFerreteria{
+  grid-area: subtituloFerreteria;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#mapaFerreteria{
+  grid-area: mapaFerreteria;
+  justify-self: start;
+}
+
+#textoFerreteria{
+  grid-area: textoFerreteria;
+  justify-self: end;
+  text-align: start;
+  padding-left: 60%;
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main Empresa */
+
+#mainEmpresa{
+  grid-area: mainEmpresa;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.containerEmpresa{
+  height: 700px;
+  width: 700px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin-top: 130px;
+}
+
+.tituloEmpresa{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 7px;
+  border-bottom: 2px solid black;
+
+}
+
+.parrafoEmpresa{
+  font-family: 'Roboto', sans-serif;
+}
+
+#imagenEmpresa{
+  height: 300px;
+  margin-top: 130px;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+
+/* Main Contacto */
+
+#mainContacto{
+  grid-area: mainContacto;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* formulario contacto */
+
+.containerFormulario{
+  margin-top: 150px;
+  padding: 15px 15px;
+  background-color: grey;
+  width: 485px;
+  height: 380px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: start;
+  justify-content: flex-start;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tituloFormulario{
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+#areaNombre{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 206px;
+  height: 34px;
+  padding: 0px 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#areaEmail{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 455px;
+  height: 34px;
+  padding: 0px 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#areaTelefono{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 455px;
+  height: 34px;
+  padding: 0px 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#areaMensaje{
+  font-family: 'Roboto', sans-serif;
+  padding: 3px 3px;
+}
+
+#areaBoton{
+  width: 86px;
+  height: 34px;
+  padding: 0px 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+main form span{
+  padding: 5px 5px;
+}
+
+/* informacion de contacto */
+
+.containerContacto{
+  height: 660px;
+  width: 437px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 80px;
+}
+
+.tituloContacto{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.parrafoContacto{
+  margin-bottom: 5px;
+}
+
+.telefonoContacto{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-top: 1px solid grey;
+  padding-top: 5px;
+}
+
+.ventasContacto{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-top: 1px solid grey;
+  padding-top: 5px;
+}
+
+.domicilioContacto{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-top: 1px solid grey;
+  padding-top: 5px;
+}
+
+/* Footer */
+
+footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+#contenido{   
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#cabecera{
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#pie{
+  text-align: center;
+  color: white;
+}
+
+/*            MEDIAQUERIES TABLET            */
+
+@media screen and (max-width: 1024px) and (min-width: 600px){
+
+  /* Banner */
+
+  .logo{
+    height: 130px;
+  }
+
+  /* Menu Navegacion */
+
+  nav ul li{
+    margin-right: 17px;
+    margin-left: 17px;
+  } 
+
+  /* Main Inicio */
+
+  .mainInicio{
+    flex-direction: column;
+  }
+
+  #imagenProductos1{
+    margin: 0px 0px 0px 0px;
+    width: 500px;
+  }
+
+  #textoProductos1{
+    margin: 5px 0px 20px 0px;
+    text-align: center;
+    width: 450px;
+    height: auto;
+  }
+
+  #imagenProductos2{
+    margin: 0px 0px 0px 0px;
+    width: 500px;
+  }
+
+
+  #textoProductos2{
+    margin: 30px 0px 5px 0px;
+    text-align: center;
+    width: 450px;
+    height: auto;
+  }
+
+    /* Main Productos */
+
+    .mainProductos{
+      justify-content: center;
+      flex-direction: column;
+      margin: 20px 0px 20px 0px;
+      height: auto;
+    }
+    
+    #archivoProductos{
+      margin: 0px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 150px;
+  
+    }
+  
+    #textoProductos{
+      margin: 0px 0px 5px 0px;
+      width: 70%;
+      align-self: center;
+  
+    }
+  
+    #imagenProductos{
+      margin: 0px 0px 0px 0px;
+      height: 150px;
+      width: 300px;
+      align-self: center;
+  
+    }
+  
+    #preciosProductos{
+      margin: 0px 0px 0px 0px;
+      height: 120px;
+  
+    }
+    
+    #marcasProductos{
+      margin: 0px 0px 0px 0px;
+      width: 100%;
+      height: 200px;
+      align-self: center;
+    }
+
+    /* Main Empresa */
+
+    #mainEmpresa{
+      flex-direction: column-reverse;
+    }
+
+    #imagenEmpresa{
+      margin: 0px;
+      width: 70%;
+      align-self: center;
+      border-radius: 10px;
+    }
+
+    .containerEmpresa{
+      margin: 30px 0px 20px 0px;
+      width: 60%;
+      align-self: center;
+      height: auto;
+      text-align: center;
+    }
+
+    /* Main Sucursales */
+
+    .mainSucursales{
+      grid-template-areas: "tituloSucursales tituloSucursales"
+                       "subtituloDistribuidora subtituloDistribuidora"
+                       "mapaDistribuidora mapaDistribuidora"
+                       "textoDistribuidora textoDistribuidora"
+                       "subtituloFerreteria subtituloFerreteria"
+                       "mapaFerreteria mapaFerreteria"
+                       "textoFerreteria textoFerreteria";
+      gap: 25px 0px;
+    }
+
+    #mapaDistribuidora{
+      justify-self: center;
+    }
+
+    #textoDistribuidora{
+      justify-self: center;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    #mapaFerreteria{
+      justify-self: center;
+    }
+
+    #textoFerreteria{
+      justify-self: center;
+      text-align: center;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    /* Main Contacto */
+
+    #mainContacto{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      height: auto;
+    }
+
+    .containerFormulario{
+      margin: 20px 0px;
+      height: auto;
+    }
+
+    .containerContacto{
+      margin: 20px 0px;
+      height: auto;
+    }
+}
+
+/*             MEDIAQUERIES CELULAR             */
+
+@media screen and (max-width: 599px) and (min-width: 320px){
+
+  /* Banner */
+
+  .logo{
+    height: 70px;
+  }
+
+  /* Menu Navegacion */
+
+  nav ul li{
+    margin: 9px 18px;
+    padding: 2px 2px;
+  }
+
+  nav ul{
+    flex-wrap: wrap;
+  }
+
+  nav ul li a{
+    font-size: 13px;
+  }
+
+  /* Main Inicio */
+
+  .mainInicio{
+    flex-direction: column;
+  }
+
+  #imagenProductos1{
+    margin: 40px 0px 0px 0px;
+    width: 200px;
+    height: 150px;
+  }
+
+  #textoProductos1{
+    margin: 5px 0px 20px 0px;
+    text-align: center;
+    width: 250px;
+    height: auto;
+    font-size: 12px;
+  }
+
+  #imagenProductos2{
+    margin: 0px 0px 0px 0px;
+    width: 200px;
+    height: 150px;
+  }
+
+  #textoProductos2{
+    margin: 20px 0px 8px 0px;
+    text-align: center;
+    width: 250px;
+    height: auto;
+    font-size: 12px;
+  }
+
+  /* Main Productos */
+
+  .mainProductos{
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+    height: auto;
+  }
+  
+  #archivoProductos{
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+
+  }
+
+  #textoProductos{
+    margin: 0px 0px 40px 0px;
+    width: 70%;
+    align-self: center;
+
+  }
+
+  #imagenProductos{
+    margin: 0px 0px 0px 0px;
+    height: 150px;
+    width: 300px;
+    align-self: center;
+
+  }
+
+  #preciosProductos{
+    margin: 0px 0px 0px 0px;
+    height: 120px;
+
+  }
+  
+  #marcasProductos{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 200px;
+    align-self: center;
+  }
+
+  /* Main Sucursales */
+
+    .mainSucursales{
+      grid-template-areas: "tituloSucursales tituloSucursales"
+                       "subtituloDistribuidora subtituloDistribuidora"
+                       "mapaDistribuidora mapaDistribuidora"
+                       "textoDistribuidora textoDistribuidora"
+                       "subtituloFerreteria subtituloFerreteria"
+                       "mapaFerreteria mapaFerreteria"
+                       "textoFerreteria textoFerreteria";
+      gap: 25px 0px;
+    }
+
+    #tituloSucursales{
+      font-size: 8px;
+      margin-top: 10px;
+    }
+
+    #mapaDistribuidora{
+      justify-self: center;
+    }
+
+    #textoDistribuidora{
+      justify-self: center;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 11px;
+    }
+
+    #mapaFerreteria{
+      justify-self: center;
+    }
+
+    #textoFerreteria{
+      justify-self: center;
+      text-align: center;
+      padding-right: 20px;
+      padding-left: 20px;
+      font-size: 11px;
+    }
+
+    iframe{
+      height: 170px;
+      width: 220px;
+    }
+  
+  /* Main Empresa */
+
+  #mainEmpresa{
+    flex-direction: column-reverse;
+  }
+
+  #imagenEmpresa{
+    margin: 0px;
+    height: 170px;
+    width: 70%;
+    align-self: center;
+    border-radius: 10px;
+  }
+
+  .containerEmpresa{
+    margin: 30px 0px 20px 0px;
+    width: 60%;
+    align-self: center;
+    height: auto;
+    font-size: 11px;
+  }
+
+    /* Main Contacto */
+
+    #mainContacto{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      height: auto;
+      margin: 0px;
+    }
+
+    .containerFormulario{
+      margin: 20px 0px;
+      width: 85%;
+      height: auto;
+      font-size: 13px;
+    }
+
+    #areaEmail{
+      width: 75%;
+
+    }
+
+    #areaTelefono{
+      width: 75%;
+
+    }
+
+    #areaMensaje{
+      width: 75%;
+    }
+
+    .containerContacto{
+      margin: 50px 0px;
+      width: 80%;
+      height: auto;
+      align-content: center;
+    }
+
+  /* Footer */
+
+  footer{
+    font-size: 12px;
+    height: 60px;
+  }
+
+}
+
+
